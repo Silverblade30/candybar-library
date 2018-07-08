@@ -526,9 +526,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             if (id == R.id.title) {
                 ((CandyBarMainActivity) mContext).selectPosition(4);
             } else if (id == R.id.muzei) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(
-                        "https://play.google.com/store/apps/details?id=net.nurik.roman.muzei"));
-                intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+
                 mContext.startActivity(intent);
             }
         }
