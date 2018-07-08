@@ -522,14 +522,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         @Override
         public void onClick(View view) {
-            int id = view.getId();
-            if (id == R.id.title) {
-                ((CandyBarMainActivity) mContext).selectPosition(4);
-            } else if (id == R.id.muzei) {
 
-                mContext.startActivity(intent);
-            }
-        }
     }
 
     private class GooglePlayDevViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
